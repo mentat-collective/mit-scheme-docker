@@ -1,7 +1,7 @@
 ## Docker + MIT Scheme and SCMUtils
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/69635/82737854-05686300-9cf1-11ea-87e0-f9711842e5a2.png" alt="MIT Scheme"/>
+  <img src="https://user-images.githubusercontent.com/69635/82737854-05686300-9cf1-11ea-87e0-f9711842e5a2.png" alt="MIT Scheme" width="250" height="250" />
 </p>
 
 This repository contains Dockerfiles for:
