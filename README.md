@@ -12,10 +12,10 @@ This repository contains Dockerfiles for:
 
 - [`mit-scheme`](https://github.com/sritchie/mit-scheme-docker/tree/master/mit-scheme)
   (available on
-  [Dockerhub](https://hub.docker.com/repository/docker/sritchie/mit-scheme))
+  [Dockerhub](https://hub.docker.com/r/sritchie/mit-scheme))
 - [`mechanics`](https://github.com/sritchie/mit-scheme-docker/tree/master/mechanics),
   also known as "SCMUtils" (available on
-  [Dockerhub](https://hub.docker.com/repository/docker/sritchie/mechanics))
+  [Dockerhub](https://hub.docker.com/r/sritchie/mechanics))
 
 Both of these images are important for interacting with the textbooks "Structure
 and Interpretation of Computer Programs" and "Structure and Interpretation of
