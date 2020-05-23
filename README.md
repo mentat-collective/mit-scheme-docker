@@ -1,4 +1,4 @@
-## Dockerfiles for MIT-Scheme
+## Dockerfiles for MIT Scheme
 
 ### To Interact
 
