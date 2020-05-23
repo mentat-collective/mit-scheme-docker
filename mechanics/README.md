@@ -18,6 +18,14 @@ Structure and Interpretation of Classical Mechanics](https://amzn.to/2LUx62M).
 The book is also available online in beautiful [HTML
 format](https://tgvaughan.github.io/sicm/).
 
+## SICM Exercise Repository
+
+For a project that uses these Docker images heavily for Scheme development, see
+my [SICM Exercises Repository](https://github.com/sritchie/sicm). That
+repository makes extensive use of this Docker image; if you're looking to get
+started learning `SCMUtils`, you should head over to the
+[README](https://github.com/sritchie/sicm) and poke around.
+
 ## Running mechanics / scmutils
 
 The docker image launches an mit-scheme REPL with the `scmutils` library loaded
