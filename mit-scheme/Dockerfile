@@ -34,11 +34,11 @@ RUN wget http://ftp.gnu.org/gnu/mit-scheme/stable.pkg/${SCHEME_VERSION}/${SCHEME
   && cd ../.. \
   && rm -rf ${SCHEME_DIR} ${SCHEME_TAR} md5sums.txt
 
-COPY ./scripts/with_rlwrap.sh /usr/local/bin/with-rlwrap
+COPY ./resources/with_rlwrap.sh /usr/local/bin/with-rlwrap
 RUN chmod +x /usr/local/bin/with-rlwrap
 
 # Copy in completions, so we get a nice experience at the repl.
-COPY ./scripts/mit-scheme_completions.txt /root/.mit-scheme_completions
+COPY ./resources/mit-scheme_completions.txt /root/.mit-scheme_completions
 
 WORKDIR /root
 

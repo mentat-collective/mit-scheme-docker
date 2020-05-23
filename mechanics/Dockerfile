@@ -15,7 +15,7 @@ RUN wget http://groups.csail.mit.edu/mac/users/gjs/6946/${SCM_UTILS}.tar.gz \
   && rm -rf ${SCM_UTILS} ${SCM_UTILS}.tar.gz
 
 # Copy in completions, so we get a nice experience at the repl.
-COPY ./scripts/mit-scheme_completions.txt /root/.mechanics_completions
+COPY ./resources/mechanics_completions.txt /root/.mechanics_completions
 
 WORKDIR /root
 
