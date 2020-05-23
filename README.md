@@ -1,5 +1,9 @@
 ## Docker + MIT Scheme and SCMUtils
 
+[MIT/GNU Scheme](https://www.gnu.org/software/mit-scheme/), and the amazing
+[SCMUtils](https://groups.csail.mit.edu/mac/users/gjs/6946/refman.txt),
+containerized for your pleasure!
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/69635/82737854-05686300-9cf1-11ea-87e0-f9711842e5a2.png" alt="MIT Scheme" width="250" height="250" />
 </p>
