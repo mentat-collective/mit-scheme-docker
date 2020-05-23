@@ -15,7 +15,8 @@ The docker image launches an mit-scheme REPL, assisted by
 completion in the REPL, and the ability to scroll backward and forward in your
 REPL with the up and down arrows.
 
-This command is the simplest way to get started:
+The command `docker run -it --rm sritchie/mechanics` is the simplest way to get
+started:
 
 ```bash
 $ docker run -it --rm sritchie/mechanics
@@ -43,18 +44,20 @@ your path - `~/bin/mit-scheme`, for example - and add this to the file:
 ```bash
 #!/bin/bash
 
-# NOTE - you have to have enabled network connections in XQuartz!
-xhost + 127.0.0.1
+if xhost >& /dev/null ; then
+  # NOTE - On OS X, you have to have enabled network connections in XQuartz!
+  xhost + 127.0.0.1
+fi
 
-workdir=/usr/app
+workdir="$PWD"
 
 docker run \
        --ipc host \
        --interactive --tty --rm \
        --workdir $workdir \
-       --volume "$PWD":$workdir \
+       --volume $workdir:$workdir \
        -e DISPLAY=host.docker.internal:0 \
-       sritchie/mit-scheme
+       sritchie/mit-scheme "$@"
 ```
 
 Then run `chmod +x ~/bin/mit-scheme` to make it executable.
@@ -64,8 +67,10 @@ This more involved wrapper script will:
 - Run the Docker container with the ability to send graphics and rendered LaTeX
   out to an X11 server running on your host machine
 - Mount the directory where you run the script into the container, so you can
-  access and load files from the repl
-- Give the Docker process running `mechanics` access to all of the memory on
+  access and load files from the repl. The directory has the same name as the
+  directory where you run the command, so that absolute paths you specify inside
+  that directory will resolve correctly inside the container.
+- Give the Docker process running `mit-scheme` access to all of the memory on
   your machine
 
 ## X11 on Mac

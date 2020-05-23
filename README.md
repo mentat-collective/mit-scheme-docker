@@ -1,4 +1,8 @@
-## Dockerfiles for MIT Scheme
+## Docker + MIT Scheme and SCMUtils
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/69635/82737854-05686300-9cf1-11ea-87e0-f9711842e5a2.png" alt="MIT Scheme"/>
+</p>
 
 This repository contains Dockerfiles for:
 
@@ -9,9 +13,19 @@ This repository contains Dockerfiles for:
   also known as "SCMUtils" (available on
   [Dockerhub](https://hub.docker.com/repository/docker/sritchie/mechanics))
 
-Both of these are important for interacting with the textbooks "Structure and
-Interpretation of Computer Programs" and "Structure and Interpretation of
-Classical Mechanics", by Sussman.
+Both of these images are important for interacting with the textbooks "Structure
+and Interpretation of Computer Programs" and "Structure and Interpretation of
+Classical Mechanics", by Sussman and Wisdom.
+
+For a project that uses these Docker images heavily for Scheme development, see
+my [SICM Exercises Repository](https://github.com/sritchie/sicm).
 
 The subfolders linked above have instructions that show you how to interact with
 the commands that these images provide.
+
+## License
+
+Copyright 2020, Sam Ritchie.
+
+Licensed under the [Apache License, Version
+2.0](http://www.apache.org/licenses/LICENSE-2.0).
