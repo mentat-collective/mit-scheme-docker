@@ -1,24 +1,17 @@
 ## Dockerfiles for MIT Scheme
 
-### To Interact
+This repository contains Dockerfiles for:
 
-Use this to get in and debug during installation.
+- [`mit-scheme`](https://github.com/sritchie/mit-scheme-docker/tree/master/mit-scheme)
+  (available on
+  [Dockerhub](https://hub.docker.com/repository/docker/sritchie/mit-scheme))
+- [`mechanics`](https://github.com/sritchie/mit-scheme-docker/tree/master/mechanics),
+  also known as "SCMUtils" (available on
+  [Dockerhub](https://hub.docker.com/repository/docker/sritchie/mechanics))
 
-```
-docker build .
-docker run --ipc host -it --entrypoint /bin/bash $CONTAINER_ID # that gets printed
-```
+Both of these are important for interacting with the textbooks "Structure and
+Interpretation of Computer Programs" and "Structure and Interpretation of
+Classical Mechanics", by Sussman.
 
-Run the notebook with:
-```
-docker run --ipc host -it --rm -p 8888:8888 649c9549c1ec
-```
-
-## Mac Notes on how to get everything going
-
-- Install XQuartz
-- Activate the option ‘Allow connections from network clients’ in XQuartz settings
-
-## Jupyter and Colab
-
-I ended up stuck, here: https://github.com/joeltg/mit-scheme-kernel/issues/21
+The subfolders linked above have instructions that show you how to interact with
+the commands that these images provide.
