@@ -16,7 +16,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive \
   rm -rf /var/lib/apt/lists/*
 
 # Set up environment variables to make the installation easier.
-ENV SCHEME_VERSION 10.1.10
+ENV SCHEME_VERSION 10.1.11
 ENV SCHEME_DIR mit-scheme-${SCHEME_VERSION}
 ENV SCHEME_TAR ${SCHEME_DIR}-x86-64.tar.gz
 
