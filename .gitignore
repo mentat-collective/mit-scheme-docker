@@ -1,3 +1,4 @@
 *.bin
 *.com
 *.bci
+*log*
